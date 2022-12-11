@@ -1,6 +1,6 @@
 :root {
   --body-bg-color: hsl(169, 19%, 17%);
-  --text-color: #5a7e07;
+  --text-color: rgb(72, 66, 102);
   --bg-cards: #c4c8d8;
   --bg-techs: #7cb681;
 }
@@ -9,16 +9,18 @@
 
 body {
   background-color: var(--body-bg-color);
-  margin: 2% 2%;
+  margin: 0% 0%;
+  color: var(--text-color);
 }
 
 .main {
+  position: relative;
   display: grid;
   box-sizing: border-box;
-  column-gap: 2%;
-  row-gap: 4%;
-  grid-template-columns: 20% 38% 38%;
-  grid-template-rows: 2% 9% 1% 17% 10% 22%;
+  column-gap: 0%;
+  row-gap: 0%;
+  grid-template-columns: 0% 0% 0% 0% 0% 0% 0% 0% 0% 0% 0% 0%;
+  grid-template-rows: 0% 0% 0% 0% 0% 0%;
   grid-template-areas:
     "profile myprojects myprojects"
     "profile postGH-1 postGH-2"
@@ -31,166 +33,235 @@ body {
 
 .profile {
   background-color: var(--bg-cards);
-  /*border: solid 2px var(--bg-cards);*/
   grid-area: profile;
-  /*width: 20vw;
-  height: 35vh;*/
-  width: 310px;
-  height: 235px;
+  width: 348px;
+  height: 292px;
   min-width: 195px;
   min-height: 209px;
+  left: 40px;
+  top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  position: absolute;
 }
 
 .profile img {
-  width: 150px;
-  height: 150px;
+  width: 128px;
+  height: 128px;
+  left: 110px;
+  top: 32px;
   border-radius: 50%;
   border: solid 4px rgb(72, 66, 102);
+  position: absolute;
 }
 
 .profile h2 {
-  margin-bottom: 5px;
-  justify-content: center;
+  margin-top: 150px;
   font-family: "Merriweather Sans", sans-serif;
+  font-style: normal;
   font-weight: 700;
+  font-size: 23px;
+  line-height: 29px;
 }
 
 .profile p {
   margin: 1px;
   justify-content: center;
   font-family: "Merriweather Sans", sans-serif;
-  font-weight: 500;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
 }
 
 .myprojects {
   background-color: var(--bg-cards);
   grid-area: myprojects;
-  /*border: solid 2px var(--bg-cards);*/
-  /*width: 73vw;
-  height: 9vh;*/
-  width: 1165px;
-  height: 53px;
+  position: absolute;
+  width: 952px;
+  height: 86px;
+  left: 448px;
+  top: 40px;
   border-radius: 10px;
 }
 
-.myprojects p {
+.myprojects h3 {
   font-family: "Merriweather Sans", sans-serif;
   font-weight: 700;
+  padding-left: 30px;
 }
 
 .contactos {
   background-color: var(--bg-cards);
   grid-area: contacts;
-  /*border: solid 2px var(--bg-cards);*/
-  /*width: 20vw;
-  height: 42vh;*/
-  width: 310px;
-  height: 340px;
+  position: absolute;
+  width: 348px;
+  height: 348px;
+  left: 40px;
+  top: 362px;
   border-radius: 10px;
+}
+
+.contactos ul {
+  font-family: "Merriweather Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  padding-left: 50px;
 }
 
 .post-1 {
   background-color: var(--bg-cards);
   grid-area: postGH-1;
-  /*border: solid 2px var(--bg-cards);*/
-  /*width: 35vw;
-  height: 21vh;*/
-  width: 550px;
-  height: 140px;
+  position: absolute;
+  width: 461px;
+  height: 186px;
+  left: 448px;
+  top: 157px;
   border-radius: 10px;
+}
+.post-1 h3 {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 700;
+  padding-left: 66px;
+}
+.post-1 p {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 400;
+  padding-left: 30px;
 }
 
 .post-2 {
   background-color: var(--bg-cards);
   grid-area: postGH-2;
-  /*border: solid 2px var(--bg-cards);*/
-  /*width: 35vw;
-  height: 21vh;*/
+  position: absolute;
+  width: 461px;
+  height: 186px;
+  left: 939px;
+  top: 157px;
   border-radius: 10px;
-  width: 550px;
-  height: 140px;
+}
+.post-2 h3 {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 700;
+  padding-left: 66px;
+}
+.post-2 p {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 400;
+  padding-left: 30px;
 }
 
 .recentPost {
   background-color: var(--bg-cards);
   grid-area: recentPost;
-  /*border: solid 2px var(--bg-cards);*/
-  /*width: 73vw;
-  height: 9vh;*/
   border-radius: 10px;
-  width: 1165px;
-  height: 50px;
+  position: absolute;
+  width: 952px;
+  height: 86px;
+  left: 448px;
+  top: 373px;
 }
 
-.recentPost p {
+.recentPost h3 {
   font-family: "Merriweather Sans", sans-serif;
   font-weight: 700;
+  padding-left: 30px;
 }
 
 .post {
   background-color: var(--bg-cards);
   grid-area: post;
-  width: 1165px;
-  height: 180px;
+  position: absolute;
+  width: 952px;
+  height: 201px;
+  left: 448px;
+  top: 489px;
   border-radius: 10px;
-  /*border: solid 2px var(--bg-cards);*/
+}
+.post h3 {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 700;
+  padding-left: 200px;
+}
+
+.post p {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 400;
+  padding-left: 200px;
 }
 
 .post img {
-  width: 10vw;
-  height: 18vh;
-  border-radius: 15%;
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  left: 30px;
+  top: 31px;
+  border-radius: 50%;
+  border: solid 4px rgb(72, 66, 102);
 }
 
-.tecnologies {
+.tecnologias {
   background-color: var(--bg-cards);
   grid-area: tec;
-  /*border: solid 2px var(--bg-cards);*/
-  /*width: 20vw;
-  height: 21vh;*/
-  width: 310px;
-  height: 170px;
+  position: absolute;
+  width: 348px;
+  height: 208px;
+  left: 40px;
+  top: 740px;
   border-radius: 10px;
 }
 
-.tecnologies p {
+.tecnologias h3 {
   font-family: "Merriweather Sans", sans-serif;
   font-weight: 700;
+  padding-left: 23px;
 }
 
-.experiences {
+.experiencias {
   background-color: var(--bg-cards);
   grid-area: exp;
-  /*border: solid 2px var(--bg-cards);*/
-  /*width: 20vw;
-  height: 44vh;*/
-  width: 310px;
-  height: 340px;
+  position: absolute;
+  width: 348px;
+  height: 349px;
+  left: 40px;
+  top: 978px;
   border-radius: 10px;
 }
 
-.experiences p {
+.experiencias h3 {
   font-family: "Merriweather Sans", sans-serif;
   font-weight: 700;
+  padding-left: 23px;
+}
+.experiencias ul {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 14px;
+  padding-left: 50px;
 }
 
-.education {
+.educacao {
   background-color: var(--bg-cards);
   grid-area: edu;
-  /*border: solid 2px var(--bg-cards);*/
-  /*width: 20vw;
-  height: 44vh;*/
-  width: 310px;
-  height: 340px;
+  position: absolute;
+  width: 348px;
+  height: 352px;
+  left: 40px;
+  top: 1357px;
   border-radius: 10px;
 }
 
-.education p {
+.educacao h3 {
   font-family: "Merriweather Sans", sans-serif;
   font-weight: 700;
+  padding-left: 23px;
+}
+.educacao ul {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 14px;
+  padding-left: 50px;
 }
