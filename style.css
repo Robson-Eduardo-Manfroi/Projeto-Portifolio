@@ -15,6 +15,8 @@ body {
 
 .main {
   position: relative;
+  width: 1440px;
+  height: 1767px;
   display: grid;
   box-sizing: border-box;
   column-gap: 0%;
@@ -94,7 +96,7 @@ body {
   padding-left: 30px;
 }
 
-.contactos {
+.contatos {
   background-color: var(--bg-cards);
   grid-area: contacts;
   position: absolute;
@@ -104,16 +106,127 @@ body {
   top: 362px;
   border-radius: 10px;
 }
-
-.contactos ul {
-  font-family: "Merriweather Sans", sans-serif;
-  font-style: normal;
+.ico1 img {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 40px;
+  top: 30px;
+}
+.p1 p {
+  position: absolute;
+  font-family: "Merriweather Sans";
   font-weight: 400;
+  left: 80px;
+  top: 22px;
   font-size: 13px;
   line-height: 16px;
-  padding-left: 50px;
 }
 
+.ico2 img {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 40px;
+  top: 74px;
+}
+.p2 p {
+  position: absolute;
+  font-family: "Merriweather Sans";
+  font-weight: 400;
+  left: 80px;
+  top: 69px;
+  font-size: 13px;
+  line-height: 16px;
+}
+.ico3 img {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 40px;
+  top: 118px;
+}
+
+.p3 p {
+  position: absolute;
+  font-family: "Merriweather Sans";
+  font-weight: 400;
+  left: 80px;
+  top: 113px;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.ico4 img {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 40px;
+  top: 162px;
+}
+
+.p4 p {
+  position: absolute;
+  font-family: "Merriweather Sans";
+  font-weight: 400;
+  left: 80px;
+  top: 150px;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.ico5 img {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 40px;
+  top: 206px;
+}
+
+.p5 p {
+  position: absolute;
+  font-family: "Merriweather Sans";
+  font-weight: 400;
+  left: 80px;
+  top: 198px;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.ico6 img {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 40px;
+  top: 250px;
+}
+
+.p6 p {
+  position: absolute;
+  font-family: "Merriweather Sans";
+  font-weight: 400;
+  left: 80px;
+  top: 238px;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.ico7 img {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 40px;
+  top: 294px;
+}
+.p7 p {
+  position: absolute;
+  font-family: "Merriweather Sans";
+  font-weight: 400;
+  left: 80px;
+  top: 285px;
+  font-size: 13px;
+  line-height: 16px;
+}
 .post-1 {
   background-color: var(--bg-cards);
   grid-area: postGH-1;
@@ -252,6 +365,7 @@ body {
   height: 352px;
   left: 40px;
   top: 1357px;
+  bottom: 58px;
   border-radius: 10px;
 }
 
