@@ -1,9 +1,11 @@
 :root {
-  --body-bg-color: hsl(231, 69%, 32%);
+  --body-bg-color: hsl(169, 19%, 17%);
   --text-color: #5a7e07;
-  --bg-cards: #c9cddf;
+  --bg-cards: #c4c8d8;
   --bg-techs: #7cb681;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap");
 
 body {
   background-color: var(--body-bg-color);
@@ -11,14 +13,12 @@ body {
 }
 
 .main {
-  /*width: 1767px;
-  height: 1440px;*/
   display: grid;
   box-sizing: border-box;
-  column-gap: 0px;
-  row-gap: 0px;
-  grid-template-columns: 10% 37 37%;
-  grid-template-rows: 3% 10% 2% 14% 9% 22%;
+  column-gap: 2%;
+  row-gap: 4%;
+  grid-template-columns: 20% 38% 38%;
+  grid-template-rows: 2% 9% 1% 17% 10% 22%;
   grid-template-areas:
     "profile myprojects myprojects"
     "profile postGH-1 postGH-2"
@@ -35,8 +35,8 @@ body {
   grid-area: profile;
   /*width: 20vw;
   height: 35vh;*/
-  width: 348px;
-  height: 292px;
+  width: 310px;
+  height: 235px;
   min-width: 195px;
   min-height: 209px;
   display: flex;
@@ -50,15 +50,21 @@ body {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: solid 4px rgb(76, 5, 156);
-}
-
-.profile p {
-  margin: 1px;
+  border: solid 4px rgb(72, 66, 102);
 }
 
 .profile h2 {
   margin-bottom: 5px;
+  justify-content: center;
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 700;
+}
+
+.profile p {
+  margin: 1px;
+  justify-content: center;
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 500;
 }
 
 .myprojects {
@@ -67,42 +73,47 @@ body {
   /*border: solid 2px var(--bg-cards);*/
   /*width: 73vw;
   height: 9vh;*/
-  width: 952px;
-  height: 86px;
+  width: 1165px;
+  height: 53px;
   border-radius: 10px;
 }
 
-.contacts {
+.myprojects p {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 700;
+}
+
+.contactos {
   background-color: var(--bg-cards);
   grid-area: contacts;
   /*border: solid 2px var(--bg-cards);*/
   /*width: 20vw;
   height: 42vh;*/
-  width: 348px;
-  height: 348px;
+  width: 310px;
+  height: 340px;
   border-radius: 10px;
 }
 
-.postGH-1 {
+.post-1 {
   background-color: var(--bg-cards);
   grid-area: postGH-1;
   /*border: solid 2px var(--bg-cards);*/
   /*width: 35vw;
   height: 21vh;*/
-  width: 461px;
-  height: 186px;
+  width: 550px;
+  height: 140px;
   border-radius: 10px;
 }
 
-.postGH-2 {
+.post-2 {
   background-color: var(--bg-cards);
   grid-area: postGH-2;
   /*border: solid 2px var(--bg-cards);*/
   /*width: 35vw;
   height: 21vh;*/
   border-radius: 10px;
-  width: 461px;
-  height: 186px;
+  width: 550px;
+  height: 140px;
 }
 
 .recentPost {
@@ -112,15 +123,20 @@ body {
   /*width: 73vw;
   height: 9vh;*/
   border-radius: 10px;
-  width: 952px;
-  height: 86px;
+  width: 1165px;
+  height: 50px;
+}
+
+.recentPost p {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 700;
 }
 
 .post {
   background-color: var(--bg-cards);
   grid-area: post;
-  width: 952px;
-  height: 201px;
+  width: 1165px;
+  height: 180px;
   border-radius: 10px;
   /*border: solid 2px var(--bg-cards);*/
 }
@@ -137,9 +153,14 @@ body {
   /*border: solid 2px var(--bg-cards);*/
   /*width: 20vw;
   height: 21vh;*/
-  width: 348px;
-  height: 208px;
+  width: 310px;
+  height: 170px;
   border-radius: 10px;
+}
+
+.tecnologies p {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 700;
 }
 
 .experiences {
@@ -148,9 +169,14 @@ body {
   /*border: solid 2px var(--bg-cards);*/
   /*width: 20vw;
   height: 44vh;*/
-  width: 348px;
-  height: 349px;
+  width: 310px;
+  height: 340px;
   border-radius: 10px;
+}
+
+.experiences p {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 700;
 }
 
 .education {
@@ -159,7 +185,12 @@ body {
   /*border: solid 2px var(--bg-cards);*/
   /*width: 20vw;
   height: 44vh;*/
-  width: 348px;
-  height: 352px;
+  width: 310px;
+  height: 340px;
   border-radius: 10px;
+}
+
+.education p {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 700;
 }
