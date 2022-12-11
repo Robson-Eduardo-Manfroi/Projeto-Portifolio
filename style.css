@@ -1,0 +1,165 @@
+:root {
+  --body-bg-color: hsl(231, 69%, 32%);
+  --text-color: #5a7e07;
+  --bg-cards: #c9cddf;
+  --bg-techs: #7cb681;
+}
+
+body {
+  background-color: var(--body-bg-color);
+  margin: 2% 2%;
+}
+
+.main {
+  /*width: 1767px;
+  height: 1440px;*/
+  display: grid;
+  box-sizing: border-box;
+  column-gap: 0px;
+  row-gap: 0px;
+  grid-template-columns: 10% 37 37%;
+  grid-template-rows: 3% 10% 2% 14% 9% 22%;
+  grid-template-areas:
+    "profile myprojects myprojects"
+    "profile postGH-1 postGH-2"
+    "contacts recentPost recentPost"
+    "contacts post post"
+    "tec . ."
+    "exp . ."
+    "edu . .";
+}
+
+.profile {
+  background-color: var(--bg-cards);
+  /*border: solid 2px var(--bg-cards);*/
+  grid-area: profile;
+  /*width: 20vw;
+  height: 35vh;*/
+  width: 348px;
+  height: 292px;
+  min-width: 195px;
+  min-height: 209px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: solid 4px rgb(76, 5, 156);
+}
+
+.profile p {
+  margin: 1px;
+}
+
+.profile h2 {
+  margin-bottom: 5px;
+}
+
+.myprojects {
+  background-color: var(--bg-cards);
+  grid-area: myprojects;
+  /*border: solid 2px var(--bg-cards);*/
+  /*width: 73vw;
+  height: 9vh;*/
+  width: 952px;
+  height: 86px;
+  border-radius: 10px;
+}
+
+.contacts {
+  background-color: var(--bg-cards);
+  grid-area: contacts;
+  /*border: solid 2px var(--bg-cards);*/
+  /*width: 20vw;
+  height: 42vh;*/
+  width: 348px;
+  height: 348px;
+  border-radius: 10px;
+}
+
+.postGH-1 {
+  background-color: var(--bg-cards);
+  grid-area: postGH-1;
+  /*border: solid 2px var(--bg-cards);*/
+  /*width: 35vw;
+  height: 21vh;*/
+  width: 461px;
+  height: 186px;
+  border-radius: 10px;
+}
+
+.postGH-2 {
+  background-color: var(--bg-cards);
+  grid-area: postGH-2;
+  /*border: solid 2px var(--bg-cards);*/
+  /*width: 35vw;
+  height: 21vh;*/
+  border-radius: 10px;
+  width: 461px;
+  height: 186px;
+}
+
+.recentPost {
+  background-color: var(--bg-cards);
+  grid-area: recentPost;
+  /*border: solid 2px var(--bg-cards);*/
+  /*width: 73vw;
+  height: 9vh;*/
+  border-radius: 10px;
+  width: 952px;
+  height: 86px;
+}
+
+.post {
+  background-color: var(--bg-cards);
+  grid-area: post;
+  width: 952px;
+  height: 201px;
+  border-radius: 10px;
+  /*border: solid 2px var(--bg-cards);*/
+}
+
+.post img {
+  width: 10vw;
+  height: 18vh;
+  border-radius: 15%;
+}
+
+.tecnologies {
+  background-color: var(--bg-cards);
+  grid-area: tec;
+  /*border: solid 2px var(--bg-cards);*/
+  /*width: 20vw;
+  height: 21vh;*/
+  width: 348px;
+  height: 208px;
+  border-radius: 10px;
+}
+
+.experiences {
+  background-color: var(--bg-cards);
+  grid-area: exp;
+  /*border: solid 2px var(--bg-cards);*/
+  /*width: 20vw;
+  height: 44vh;*/
+  width: 348px;
+  height: 349px;
+  border-radius: 10px;
+}
+
+.education {
+  background-color: var(--bg-cards);
+  grid-area: edu;
+  /*border: solid 2px var(--bg-cards);*/
+  /*width: 20vw;
+  height: 44vh;*/
+  width: 348px;
+  height: 352px;
+  border-radius: 10px;
+}
