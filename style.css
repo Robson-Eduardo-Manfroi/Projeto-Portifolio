@@ -1,8 +1,8 @@
 :root {
-  --body-bg-color: hsl(169, 19%, 17%);
+  --body-bg-color: rgb(72, 66, 102);
   --text-color: rgb(72, 66, 102);
   --bg-cards: #c4c8d8;
-  --bg-techs: #7cb681;
+  --bg-techs: rgb(196, 86, 211);
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap");
@@ -479,9 +479,167 @@ body {
 }
 
 .tecnologias h3 {
-  font-family: "Merriweather Sans", sans-serif;
+  position: absolute;
+  width: 121px;
+  height: 26px;
+  left: 23px;
+  top: 20px;
+  font-family: "Merriweather Sans";
+  font-style: normal;
   font-weight: 700;
-  padding-left: 23px;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.tec1 {
+  border: solid 2px rgb(72, 66, 102);
+  background-color: var(--bg-techs);
+  border-radius: 25px;
+  position: absolute;
+  width: 86px;
+  height: 24px;
+  left: 30px;
+  top: 76px;
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: center;
+}
+
+.tec2 {
+  border: solid 2px rgb(72, 66, 102);
+  background-color: var(--bg-techs);
+  border-radius: 25px;
+  position: absolute;
+  width: 86px;
+  height: 24px;
+  left: 30px;
+  top: 115px;
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: center;
+}
+
+.tec3 {
+  border: solid 2px rgb(72, 66, 102);
+  background-color: var(--bg-techs);
+  border-radius: 25px;
+  position: absolute;
+  width: 86px;
+  height: 24px;
+  left: 30px;
+  top: 154px;
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: center;
+}
+
+.tec4 {
+  border: solid 2px rgb(72, 66, 102);
+  background-color: var(--bg-techs);
+  border-radius: 25px;
+  position: absolute;
+  width: 86px;
+  height: 24px;
+  left: 131px;
+  top: 76px;
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: center;
+}
+
+.tec5 {
+  border: solid 2px rgb(72, 66, 102);
+  background-color: var(--bg-techs);
+  border-radius: 25px;
+  position: absolute;
+  width: 86px;
+  height: 24px;
+  left: 131px;
+  top: 115px;
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: center;
+}
+
+.tec6 {
+  border: solid 2px rgb(72, 66, 102);
+  background-color: var(--bg-techs);
+  border-radius: 25px;
+  position: absolute;
+  width: 86px;
+  height: 24px;
+  left: 131px;
+  top: 154px;
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: center;
+}
+.tec7 {
+  border: solid 2px rgb(72, 66, 102);
+  background-color: var(--bg-techs);
+  border-radius: 25px;
+  position: absolute;
+  width: 86px;
+  height: 24px;
+  left: 232px;
+  top: 76px;
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: center;
+}
+
+.tec8 {
+  border: solid 2px rgb(72, 66, 102);
+  background-color: var(--bg-techs);
+  border-radius: 25px;
+  position: absolute;
+  width: 86px;
+  height: 24px;
+  left: 232px;
+  top: 115px;
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: center;
+}
+.tec9 {
+  border: solid 2px rgb(72, 66, 102);
+  background-color: var(--bg-techs);
+  border-radius: 25px;
+  position: absolute;
+  width: 86px;
+  height: 24px;
+  left: 232px;
+  top: 154px;
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: center;
 }
 
 .experiencias {
@@ -496,14 +654,28 @@ body {
 }
 
 .experiencias h3 {
-  font-family: "Merriweather Sans", sans-serif;
+  position: absolute;
+  width: 141px;
+  height: 26px;
+  left: 20px;
+  top: 15px;
+  font-family: "Merriweather Sans";
+  font-style: normal;
   font-weight: 700;
-  padding-left: 23px;
+  font-size: 20px;
+  line-height: 25px;
 }
 .experiencias ul {
-  font-family: "Merriweather Sans", sans-serif;
+  position: absolute;
+  width: 175px;
+  height: 243px;
+  left: 30px;
+  top: 50px;
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 700;
   font-size: 14px;
-  padding-left: 50px;
+  line-height: 18px;
 }
 
 .educacao {
@@ -519,12 +691,42 @@ body {
 }
 
 .educacao h3 {
-  font-family: "Merriweather Sans", sans-serif;
+  position: absolute;
+  width: 141px;
+  height: 26px;
+  left: 23px;
+  top: 26px;
+  font-family: "Merriweather Sans";
+  font-style: normal;
   font-weight: 700;
-  padding-left: 23px;
+  font-size: 20px;
+  line-height: 25px;
 }
 .educacao ul {
-  font-family: "Merriweather Sans", sans-serif;
+  position: absolute;
+  width: 175px;
+  height: 246px;
+  left: 30px;
+  top: 70px;
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 700;
   font-size: 14px;
-  padding-left: 50px;
+  line-height: 18px;
+}
+.rodape {
+  width: 240px;
+  height: 30px;
+  position: absolute;
+  left: 617px;
+  top: 1700px;
+}
+.rodape h2 {
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--bg-cards);
 }
