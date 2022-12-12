@@ -238,16 +238,90 @@ body {
   border-radius: 10px;
 }
 .post-1 h3 {
-  font-family: "Merriweather Sans", sans-serif;
+  position: absolute;
+  width: 79px;
+  height: 17px;
+  left: 66px;
+  top: 15px;
+  font-family: "Merriweather Sans";
+  font-style: normal;
   font-weight: 700;
-  padding-left: 66px;
+  font-size: 16px;
+  line-height: 20px;
 }
 .post-1 p {
-  font-family: "Merriweather Sans", sans-serif;
+  position: absolute;
+  width: 421px;
+  height: 19px;
+  left: 30px;
+  top: 60px;
+  font-family: "Merriweather Sans";
+  font-style: normal;
   font-weight: 400;
-  padding-left: 30px;
+  font-size: 14px;
+  line-height: 20px;
 }
 
+.ico8 img {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 30px;
+  top: 30px;
+}
+
+.ico9 img {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 30px;
+  bottom: 30px;
+}
+.p9 p {
+  position: absolute;
+  width: 28px;
+  height: 16px;
+  left: 58px;
+  top: 125px;
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.ico10 img {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 102px;
+  bottom: 30px;
+}
+.p10 p {
+  position: absolute;
+  width: 28px;
+  height: 16px;
+  left: 135px;
+  top: 125px;
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.p11 p {
+  position: absolute;
+  width: 69px;
+  height: 16px;
+  left: 362px;
+  top: 125px;
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
 .post-2 {
   background-color: var(--bg-cards);
   grid-area: postGH-2;
@@ -259,14 +333,89 @@ body {
   border-radius: 10px;
 }
 .post-2 h3 {
-  font-family: "Merriweather Sans", sans-serif;
+  position: absolute;
+  width: 79px;
+  height: 17px;
+  left: 66px;
+  top: 15px;
+  font-family: "Merriweather Sans";
+  font-style: normal;
   font-weight: 700;
-  padding-left: 66px;
+  font-size: 16px;
+  line-height: 20px;
 }
 .post-2 p {
-  font-family: "Merriweather Sans", sans-serif;
+  position: absolute;
+  width: 421px;
+  height: 19px;
+  left: 30px;
+  top: 60px;
+  font-family: "Merriweather Sans";
+  font-style: normal;
   font-weight: 400;
-  padding-left: 30px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.ico12 img {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 30px;
+  top: 30px;
+}
+
+.ico13 img {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 30px;
+  bottom: 30px;
+}
+.p13 p {
+  position: absolute;
+  width: 28px;
+  height: 16px;
+  left: 58px;
+  top: 125px;
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.ico14 img {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 102px;
+  bottom: 30px;
+}
+.p14 p {
+  position: absolute;
+  width: 28px;
+  height: 16px;
+  left: 135px;
+  top: 125px;
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.p15 p {
+  position: absolute;
+  width: 69px;
+  height: 16px;
+  left: 362px;
+  top: 125px;
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .recentPost {
