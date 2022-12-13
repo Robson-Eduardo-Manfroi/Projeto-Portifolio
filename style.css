@@ -1,6 +1,6 @@
 :root {
-  --body-bg-color: rgb(72, 66, 102);
-  --text-color: rgb(72, 66, 102);
+  --body-bg-color: hsl(169, 19%, 17%);
+  --text-color: hsl(169, 19%, 17%);
   --bg-cards: #c4c8d8;
   --bg-techs: rgb(196, 86, 211);
 }
@@ -15,8 +15,10 @@ body {
 
 .main {
   position: relative;
-  width: 1440px;
-  height: 1767px;
+  width: auto;
+  height: auto;
+  min-width: 195px;
+  min-height: 209px;
   display: grid;
   box-sizing: border-box;
   column-gap: 0%;
@@ -38,8 +40,6 @@ body {
   grid-area: profile;
   width: 348px;
   height: 292px;
-  min-width: 195px;
-  min-height: 209px;
   left: 40px;
   top: 40px;
   display: flex;
@@ -48,6 +48,7 @@ body {
   align-items: center;
   border-radius: 10px;
   position: absolute;
+  box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.829);
 }
 
 .profile img {
@@ -58,6 +59,7 @@ body {
   border-radius: 50%;
   border: solid 4px rgb(72, 66, 102);
   position: absolute;
+  box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.596);
 }
 
 .profile h2 {
@@ -67,6 +69,21 @@ body {
   font-weight: 700;
   font-size: 23px;
   line-height: 29px;
+  position: relative;
+}
+.profile h2::after {
+  content: " ";
+  width: 0%;
+  height: 4px;
+  background-color: rgb(72, 66, 102);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.profile h2:hover::after {
+  width: 100%;
 }
 
 .profile p {
@@ -74,8 +91,8 @@ body {
   justify-content: center;
   font-family: "Merriweather Sans", sans-serif;
   font-style: normal;
-  font-weight: 300;
-  font-size: 13px;
+  font-weight: 400;
+  font-size: 15px;
   line-height: 16px;
 }
 
@@ -88,12 +105,27 @@ body {
   left: 448px;
   top: 40px;
   border-radius: 10px;
+  box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.829);
 }
 
 .myprojects h3 {
   font-family: "Merriweather Sans", sans-serif;
   font-weight: 700;
   padding-left: 30px;
+  padding-top: 15px;
+}
+
+.myprojects p {
+  position: absolute;
+  width: 70px;
+  height: 18px;
+  right: 30px;
+  top: 25px;
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .contatos {
@@ -105,7 +137,14 @@ body {
   left: 40px;
   top: 362px;
   border-radius: 10px;
+  box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.829);
 }
+
+.contatos p {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
 .ico1 img {
   position: absolute;
   width: 24px;
@@ -113,6 +152,7 @@ body {
   left: 40px;
   top: 30px;
 }
+
 .p1 p {
   position: absolute;
   font-family: "Merriweather Sans";
@@ -130,6 +170,7 @@ body {
   left: 40px;
   top: 74px;
 }
+
 .p2 p {
   position: absolute;
   font-family: "Merriweather Sans";
@@ -139,6 +180,7 @@ body {
   font-size: 13px;
   line-height: 16px;
 }
+
 .ico3 img {
   position: absolute;
   width: 24px;
@@ -218,6 +260,7 @@ body {
   left: 40px;
   top: 294px;
 }
+
 .p7 p {
   position: absolute;
   font-family: "Merriweather Sans";
@@ -227,6 +270,7 @@ body {
   font-size: 13px;
   line-height: 16px;
 }
+
 .post-1 {
   background-color: var(--bg-cards);
   grid-area: postGH-1;
@@ -236,6 +280,7 @@ body {
   left: 448px;
   top: 157px;
   border-radius: 10px;
+  box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.829);
 }
 .post-1 h3 {
   position: absolute;
@@ -309,19 +354,33 @@ body {
   font-size: 14px;
   line-height: 18px;
 }
-
-.p11 p {
+.ico11 {
   position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 183px;
+  top: 99px;
+}
+.p11 p {
+  position: relative;
   width: 69px;
   height: 16px;
   left: 362px;
-  top: 125px;
+  top: 120px;
   font-family: "Merriweather Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
 }
+.ico16 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 221px;
+  bottom: 60px;
+}
+
 .post-2 {
   background-color: var(--bg-cards);
   grid-area: postGH-2;
@@ -331,6 +390,7 @@ body {
   left: 939px;
   top: 157px;
   border-radius: 10px;
+  box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.829);
 }
 .post-2 h3 {
   position: absolute;
@@ -392,6 +452,7 @@ body {
   left: 102px;
   bottom: 30px;
 }
+
 .p14 p {
   position: absolute;
   width: 28px;
@@ -403,6 +464,14 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+}
+
+.ico15 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 95px;
+  top: 140px;
 }
 
 .p15 p {
@@ -427,6 +496,7 @@ body {
   height: 86px;
   left: 448px;
   top: 373px;
+  box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.829);
 }
 
 .recentPost h3 {
@@ -444,6 +514,7 @@ body {
   left: 448px;
   top: 489px;
   border-radius: 10px;
+  box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.829);
 }
 .post h3 {
   font-family: "Merriweather Sans", sans-serif;
@@ -465,6 +536,7 @@ body {
   top: 31px;
   border-radius: 50%;
   border: solid 4px rgb(72, 66, 102);
+  box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.596);
 }
 
 .tecnologias {
@@ -476,6 +548,13 @@ body {
   left: 40px;
   top: 740px;
   border-radius: 10px;
+  text-align: center;
+  align-items: center;
+  box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.829);
+}
+.tecnologias p {
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 .tecnologias h3 {
@@ -506,6 +585,7 @@ body {
   font-size: 10px;
   line-height: 13px;
   text-align: center;
+  box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.623);
 }
 
 .tec2 {
@@ -523,6 +603,7 @@ body {
   font-size: 10px;
   line-height: 13px;
   text-align: center;
+  box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.623);
 }
 
 .tec3 {
@@ -540,6 +621,7 @@ body {
   font-size: 10px;
   line-height: 13px;
   text-align: center;
+  box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.623);
 }
 
 .tec4 {
@@ -557,6 +639,7 @@ body {
   font-size: 10px;
   line-height: 13px;
   text-align: center;
+  box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.623);
 }
 
 .tec5 {
@@ -574,6 +657,7 @@ body {
   font-size: 10px;
   line-height: 13px;
   text-align: center;
+  box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.623);
 }
 
 .tec6 {
@@ -591,6 +675,7 @@ body {
   font-size: 10px;
   line-height: 13px;
   text-align: center;
+  box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.623);
 }
 .tec7 {
   border: solid 2px rgb(72, 66, 102);
@@ -607,6 +692,7 @@ body {
   font-size: 10px;
   line-height: 13px;
   text-align: center;
+  box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.623);
 }
 
 .tec8 {
@@ -624,6 +710,7 @@ body {
   font-size: 10px;
   line-height: 13px;
   text-align: center;
+  box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.623);
 }
 .tec9 {
   border: solid 2px rgb(72, 66, 102);
@@ -640,6 +727,7 @@ body {
   font-size: 10px;
   line-height: 13px;
   text-align: center;
+  box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.623);
 }
 
 .experiencias {
@@ -651,6 +739,7 @@ body {
   left: 40px;
   top: 978px;
   border-radius: 10px;
+  box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.829);
 }
 
 .experiencias h3 {
@@ -688,6 +777,7 @@ body {
   top: 1357px;
   bottom: 58px;
   border-radius: 10px;
+  box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.829);
 }
 
 .educacao h3 {
